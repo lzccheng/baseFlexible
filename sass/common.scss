@@ -1,0 +1,527 @@
+@import "var";
+@import "helper";
+@import "mixin";
+
+ol,
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+.wrap,
+body {
+    height: 100%;
+}
+
+div,
+span,
+a,
+header {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.fl,
+.left {
+    float: left;
+}
+
+.fr,
+.right {
+    float: right;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.pos-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+i {
+    display: inline-block;
+    font-style: normal;
+}
+
+p {
+    line-height: 1;
+}
+
+a {
+    display: inline-block;
+}
+
+.flexBox {
+    display: box;
+    /*（伸缩盒最老版本）*/
+    display: -webkit-box;
+    /* iOS 6-, Safari 3.1-6 */
+    display: -webkit-flex;
+    /* Chrome */
+    display: -moz-box;
+    /* Firefox 19 */
+    display: -ms-flexbox;
+    display: flexbox;
+    display: flex;
+    width: 100%;
+    //  height: 100%;
+}
+
+.flex-center {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flexItem {
+    -webkit-box: auto;
+    -webkit-flex: auto;
+    -ms-flexbox: auto;
+    flex: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.textOverflow {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.hide,
+.cm_hide,
+.hidden {
+    display: none !important;
+}
+
+#wrapper {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+.absPage {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute !important;
+    width: 100%;
+    min-height: 100%;
+    z-index: 10;
+    //  background: #f3f4f6;
+}
+
+@include moveIn();
+@include moveOut();
+
+
+////////////////////////////////////////////
+//640宽用这个
+//$scale:4;
+////////////////////////////////////////////
+////720宽用这个
+//$scale:2.7;
+////////////////////////////////////////////
+//750宽用这个
+$scale:1;
+////////////////////////////////////////////
+.font02 {
+    font-size: pxToRem(2* $scale);
+}
+
+.font03 {
+    font-size: pxToRem(3* $scale);
+}
+
+.font04 {
+    font-size: pxToRem(4* $scale);
+}
+
+.font05 {
+    font-size: pxToRem(5* $scale);
+}
+
+.font06 {
+    font-size: pxToRem(6* $scale);
+}
+
+.font07 {
+    font-size: pxToRem(7 * $scale);
+}
+
+.font08 {
+    font-size: pxToRem(8 * $scale);
+}
+
+.font09 {
+    font-size: pxToRem(9 * $scale);
+}
+
+.font10 {
+    font-size: pxToRem(10 * $scale);
+}
+
+.font11 {
+    font-size: pxToRem(11 * $scale);
+}
+
+.font12 {
+    font-size: pxToRem(12 * $scale);
+}
+
+.font13 {
+    font-size: pxToRem(13 * $scale);
+}
+
+.font14 {
+    font-size: pxToRem(14 * $scale);
+}
+
+.font15 {
+    font-size: pxToRem(15 * $scale);
+}
+
+.font16 {
+    font-size: pxToRem(16 * $scale);
+}
+
+.font17 {
+    font-size: pxToRem(17 * $scale);
+}
+
+.font18 {
+    font-size: pxToRem(18 * $scale);
+}
+
+.font19 {
+    font-size: pxToRem(19 * $scale);
+}
+
+.font20 {
+    font-size: pxToRem(20 * $scale);
+}
+
+.font21 {
+    font-size: pxToRem(21 * $scale);
+}
+
+.font22 {
+    font-size: pxToRem(22 * $scale);
+}
+
+.font23 {
+    font-size: pxToRem(23 * $scale);
+}
+
+.font24 {
+    font-size: pxToRem(24 * $scale);
+}
+
+.font25 {
+    font-size: pxToRem(25 * $scale);
+}
+
+.font26 {
+    font-size: pxToRem(26 * $scale);
+}
+
+.font27 {
+    font-size: pxToRem(27 * $scale);
+}
+
+.font28 {
+    font-size: pxToRem(28 * $scale);
+}
+
+.font29 {
+    font-size: pxToRem(29 * $scale);
+}
+
+.font30 {
+    font-size: pxToRem(30 * $scale);
+}
+
+.font31 {
+    font-size: pxToRem(31 * $scale);
+}
+
+.font32 {
+    font-size: pxToRem(32 * $scale);
+}
+
+.font33 {
+    font-size: pxToRem(33 * $scale);
+}
+
+.font34 {
+    font-size: pxToRem(34 * $scale);
+}
+
+.font35 {
+    font-size: pxToRem(35 * $scale);
+}
+
+.font36 {
+    font-size: pxToRem(36 * $scale);
+}
+
+.font37 {
+    font-size: pxToRem(37 * $scale);
+}
+
+.font38 {
+    font-size: pxToRem(38 * $scale);
+}
+
+.font39 {
+    font-size: pxToRem(39 * $scale);
+}
+
+.font40 {
+    font-size: pxToRem(40 * $scale);
+}
+
+.font41 {
+    font-size: pxToRem(41 * $scale);
+}
+
+.font42 {
+    font-size: pxToRem(42 * $scale);
+}
+
+.font43 {
+    font-size: pxToRem(43 * $scale);
+}
+
+.font44 {
+    font-size: pxToRem(44 * $scale);
+}
+
+.font45 {
+    font-size: pxToRem(45 * $scale);
+}
+
+.font46 {
+    font-size: pxToRem(46 * $scale);
+}
+
+.font47 {
+    font-size: pxToRem(47 * $scale);
+}
+
+.font48 {
+    font-size: pxToRem(48 * $scale);
+}
+
+.font49 {
+    font-size: pxToRem(49 * $scale);
+}
+
+.font50 {
+    font-size: pxToRem(50 * $scale);
+}
+
+.font52 {
+    font-size: pxToRem(52 * $scale);
+}
+
+.font54 {
+    font-size: pxToRem(54 * $scale);
+}
+
+.font56 {
+    font-size: pxToRem(56 * $scale);
+}
+
+.font58 {
+    font-size: pxToRem(58 * $scale);
+}
+
+.font60 {
+    font-size: pxToRem(60 * $scale);
+}
+
+.font62 {
+    font-size: pxToRem(62 * $scale);
+}
+
+.font64 {
+    font-size: pxToRem(64 * $scale);
+}
+
+.font66 {
+    font-size: pxToRem(66 * $scale);
+}
+
+.font68 {
+    font-size: pxToRem(68 * $scale);
+}
+
+.font70 {
+    font-size: pxToRem(70 * $scale);
+}
+
+.font72 {
+    font-size: pxToRem(72 * $scale);
+}
+
+.font74 {
+    font-size: pxToRem(74 * $scale);
+}
+
+.font75 {
+    font-size: pxToRem(75 * $scale);
+}
+
+.font76 {
+    font-size: pxToRem(76 * $scale);
+}
+
+.font78 {
+    font-size: pxToRem(78 * $scale);
+}
+
+.font80 {
+    font-size: pxToRem(80);
+}
+
+.font82 {
+    font-size: pxToRem(82 * $scale);
+}
+
+.font84 {
+    font-size: pxToRem(84 * $scale);
+}
+
+.font86 {
+    font-size: pxToRem(86 * $scale);
+}
+
+.font87 {
+    font-size: pxToRem(87 * $scale);
+}
+
+.font88 {
+    font-size: pxToRem(88 * $scale);
+}
+
+.font89 {
+    font-size: pxToRem(89 * $scale);
+}
+
+.font90 {
+    font-size: pxToRem(90 * $scale);
+}
+
+.pageSlider {
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
+//
+//.vcenter {
+//  position: relative;
+//  height: 100%;
+//}
+.vcenter-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: table;
+    //      text-align: center;
+}
+
+.vCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translateX(-50%, -50%);
+}
+
+.vBox {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hBox {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
