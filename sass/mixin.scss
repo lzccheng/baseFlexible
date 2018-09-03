@@ -309,7 +309,7 @@
 @mixin ani_guide($delay:0s) {
     -webkit-animation: guide 1.2s forwards $delay;
     animation: guide 1s forwards $delay;
-    width: pxToRem(640);
+    width: rem(640);
     height: 100%;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;

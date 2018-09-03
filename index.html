@@ -8,11 +8,203 @@
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="../css/app.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
-	
-	<script src="../js/flexible.js"></script>
-    <script src="../js/jquery-2.1.4.min.js"></script>
+	<div class="w750">
+		<!-- 提现成功弹窗 -->
+		<div class="dialog alert hide">
+			<div class="d_box text-center">
+				<div class="d_title font45">
+					<span>提现成功</span>
+				</div>
+				<div class="d_msg font36">
+					提现金额：400.00元
+				</div>
+				<div class="d_close">
+					<span class="d_line"></span>
+					<span class="d_closebtn">
+						<img src="img/index/close.png" alt="">
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 二维码弹窗 -->
+		<div class="dialog erweima hide">
+			<div class="d_people">
+				<div class="d_img">
+					<img src="img/index/erweima.png" alt="">
+					<img src="img/index/people.png" alt="" class="d_peo">
+				</div>
+				<div class="d_btn text-center">
+					<span class="font36">长按关注加入</span>
+				</div>
+				<div class="d_close">
+					<span class="d_line"></span>
+					<span class="d_closebtn">
+						<img src="img/index/close.png" alt="">
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 奖励金提现规则弹窗 -->
+		<div class="dialog rules hide">
+			<div class="d_box text-center" style="margin-top: 1.733rem">
+				<div class="d_title font45">
+					<span>奖励金计算规则</span>
+				</div>
+				<div class="d_msg font36">
+					1.一户一码活动期间，用户扫设备上二维码关注“杭州电信”微信公众号，该用户在次月15日不取消关注，该员工即可2元奖励金； <br/>
+					2.每月15日结算上月奖励金（上月关注粉丝于结算日前取关不做计算）；<br/>
+					3.本月（自然月）奖励金结算与次月15日结算，结算后已结算的奖励金清零（第一个月于次月15日提取）。
+				</div>
+				<div class="d_close">
+					<span class="d_line"></span>
+					<span class="d_closebtn">
+						<img src="img/index/close.png" alt="">
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="i_box">
+			<div class="i_top">
+				<img class="i_ii" src="img/index/topbg.jpg" alt="">
+				<div class="i_topmsg text-center">
+					<div class="i_img headerimg">
+						<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535450649871&di=c827375d92d575afd272acf5c6f252e1&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201509%2F11%2F20150911224309_YX4ny.thumb.700_0.jpeg" alt="">
+					</div>
+					<div class="i_text">
+						<span class="font30">Kwin (网运部)</span>
+					</div>
+					<div class="i_text">
+						<span class="font20 i_color">1234567890</span>
+					</div>
+				</div>
+			</div>
+			<div class="i_content">
+				<div class="i_tab flexBox flex-center flexItem text-center font34">
+					<div class="i_borderR">我的扫码量</div>
+					<div class="i_activeColor">我的奖励金<img class="middle i_prosel i_relative" id="i_prosel" src="img/index/activePro.jpg" alt=""></div>
+
+				</div>
+				<div class="i_line"></div>
+				<div class="i_show">
+					<div class="i_showitem hide" >
+						<div class="i_item i_paddingTB">
+							<img src="img/index/my1.jpg" class="middle i_icon" alt="">
+							<span class="font30 i_span">本月扫码量</span>
+							<span class="right i_span i_top">
+								<span class="font40 color2">20</span>
+								<span class="i_cash"><img src="img/index/right.png"  alt=""></span>
+							</span>
+						</div>
+						<div class="i_line i_line2"></div>
+						<div class="i_item i_paddingTB">
+							<img src="img/index/my2.png" class="middle i_icon" alt="">
+							<span>累计扫码量</span>
+							<span class="right i_span i_top">
+								<span class="font40 color3">20</span>
+								<span class="i_cash"><img src="img/index/right.png" alt=""></span>
+							</span>
+						</div>
+						<div class="i_line"></div>
+					</div>
+					<div class="i_showitem">
+						<div class="i_item">
+							<img class="middle i_icon" src="img/index/cash1.jpg" alt="">
+							<span class="font30 i_span">可提奖励金</span>
+							<span class="right i_span i_top">
+								<span class="font40 color1">20.00</span>
+								<span class="i_cash i_borderP" id="i_cash">提现</span>
+							</span>
+						</div>
+						<div class="i_line"></div>
+						<div class="i_item">
+							<img class="middle i_icon" src="img/index/cash2.jpg" alt="">
+							<span class="font30 i_span">预计奖励金</span>
+							<span class="right i_span i_top">
+								<span class="font40 color2">20.00</span>
+								<span class="i_cash"></span>
+							</span>
+						</div>
+						<div class="i_line"></div>
+						<div class="i_item">
+							<img class="middle i_icon" src="img/index/cash3.jpg" alt="">
+							<span class="font30 i_span">已提奖励金</span>
+							<span class="right i_span i_top">
+								<span class="font40 color3">20.00</span>
+								<span class="i_cash"><img src="img/index/right.png" alt=""></span>
+							</span>
+						</div>
+						<div class="i_line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="i_rules">
+				<div class="i_rulesT text-center">
+					<span class="font30">活动规则</span>
+				</div>
+				<div class="i_rulesText">
+					1、456465df ads fad fasd asd fasdfdfdsffffffffsfeggg法大师傅安德森发的gggggggggggggggggggggggggggggggg<br/>
+					2、456465df ads fad fasd asd fasdfdfdsffffffffsfeggg法大师傅安德森发的gggggggggggggggggggggggggggggggg<br/>
+					3、456465df ads fad fasd asd fasdfdfdsffffffffsfeggg法大师傅安德森发的gggggggggggggggggggggggggggggggg<br/>
+				</div>
+			</div>			
+		</div>
+		
+	</div>
+	<script src="js/flexible.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/animate.js"></script>
+    
+    <script>
+    	$(function(){
+    		//选项卡切换
+    		$('.i_tab').children().click(function(){
+    			var index = $(this).index();
+    			$(this).addClass('i_activeColor').siblings().removeClass('i_activeColor');
+    			if(index){
+    				$('.i_prosel').attr('src','img/index/activePro.jpg');
+    			}else{
+    				$('.i_prosel').attr('src','img/index/pro.jpg');
+    			}
+    			$('.i_showitem').eq(index).show().siblings().hide();
+    		})
+    		//提现弹窗
+    		function tipMsg(obj){
+    			var obj = obj;
+    			$('.alert').find('.d_title span').html(obj.title?obj.title:'温馨提示');
+				$('.alert').find('.d_msg').html(obj.msg?obj.msg:'您本月的奖励金将通过下月底工资直接发放，敬请留意！');
+				$('.alert').show().animateCss('bounceIn');
+    		}
+    		$('#i_cash').click(function(){
+    			//提现成功
+				// tipMsg({title: '提现成功',msg: '提现金额：400.00元'});
+				//温馨提示1
+				// tipMsg({title: '温馨提示',msg: '您本月的奖励金将通过下月底工资直接发放，敬请留意！'});
+				//温馨提示2
+				tipMsg({title: '温馨提示',msg: '亲~还没到提现的时间喔（每月15号后可提取上月的奖励金）'});
+    		})
+
+    		//二维码弹窗
+    		function showErweima(){
+    			$('.erweima').show().animateCss('bounceInDown');
+    		}
+    		showErweima();
+    		//奖励金规则弹窗
+    		$('.i_prosel').click(function(){
+    			$('.rules').show().animateCss('bounceIn');
+    		})
+    		//close关闭弹窗
+    		$('.d_closebtn').click(function(){
+    			var that = $(this);
+    			that.parent().parent().parent().animateCss('bounceOutUp',function(){
+    				that.parent().parent().parent().hide();
+    			})
+    		})
+
+    	})
+    </script>
 </body>
 </html>

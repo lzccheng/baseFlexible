@@ -1,0 +1,16 @@
+.c_box{
+	.c_item{
+		padding: rem(35) rem(25) rem(25);
+		border-bottom: rem(1) solid #F2F2F2;
+	}
+	.c_color{
+		display: inline-block;
+		color: #BCBCBC;
+		margin-top: rem(6);
+	}
+	.c_color2{
+		color: #F0892C;
+		position: relative;
+		top: rem(-22);
+	}
+}

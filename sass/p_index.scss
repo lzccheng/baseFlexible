@@ -1,0 +1,123 @@
+.i_box{
+	.i_top{
+		.i_ii{
+			width: rem(750);
+		}
+	}
+	.i_topmsg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		color: #fff;
+		.i_img{
+			margin-top: rem(50);
+		}
+		.i_text{
+			margin-top: rem(20);
+		}
+		.i_color{
+			color: #FCE4CE;
+		}
+	}
+	.i_content{
+		.i_tab{
+			div{
+				width: 50%;
+				padding: rem(35) 0;
+			}
+		}
+		.i_borderR{
+			border-right: rem(2) solid #eee;
+		}
+		.i_relative{
+			position: relative;
+			top: rem(-8);
+		}
+		.i_activeColor{
+			color: #EE780A;
+		}
+		.i_line{
+			width: 100%;
+			height: rem(16);
+			background-color: #F2F2F2;
+		}
+		.i_line2{
+			height: rem(8);
+		}
+		.i_prosel{
+			width: rem(50);
+			height: rem(50);
+		}
+		.i_show{
+			.i_showitem{
+				.i_item{
+					padding: rem(10) rem(10) rem(10) rem(45);
+					color: #787878;
+					.img{
+						width: rem(70);
+						height: rem(70);
+					}
+					.i_span{
+						position: relative;
+						top: rem(6);
+						&.i_top{
+							top: rem(12);
+						}
+					}
+					&.i_paddingTB{
+						padding: rem(35) rem(10) rem(35) rem(45);
+					}
+					.i_icon{
+						width: rem(70);
+						height: rem(70);
+					}
+				}
+				.color1{
+					color: #34BEFD;
+				}
+				.color2{
+					color: #FDC502;
+				}
+				.color3{
+					color: #FE7866;
+				}
+				.i_cash{
+					display: inline-block;
+					width: rem(100);
+					color: red;
+					text-align: center;
+					padding: rem(8) rem(0);
+					margin-right: rem(16);
+					img{
+						width: rem(35);
+					}
+				}
+				.i_borderP{
+					border: rem(1) solid #717171;
+					border-radius: rem(12);
+					color: #717171;
+					position: relative;
+					top: rem(-8);
+				}
+			}
+		}
+	}
+	.i_rules{
+		.i_rulesT{
+			color: #F0892C;
+			padding: rem(40) 0 rem(30);
+			span{
+				text-decoration: underline;
+			}
+		}
+
+		.i_rulesText{
+			padding: 0 rem(40);
+			text-align: justify;
+			color: #A3A3A3;
+			line-height: rem(45);
+			letter-spacing: rem(1);
+		}
+	}
+}

@@ -1,5 +1,5 @@
 @import "var";
 
-@function pxToRem($px) {
+@function rem($px) {
   @return $px / $baseRem * 1rem
 }

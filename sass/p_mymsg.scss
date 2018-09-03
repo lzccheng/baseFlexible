@@ -1,0 +1,37 @@
+.m_box{
+	background-image: url($imgPath+'mymsg/bg.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	.m_msg{
+		width: rem(640);
+		margin: rem(285) auto 0;
+		background-color: #fff;
+		border-radius: rem(20);
+		box-shadow: 0 0 rem(30) #E86612;
+		padding: rem(85) rem(50) rem(130);
+		position: relative;
+		.m_img{
+			position: absolute;
+			left: 50%;
+			top: rem(-120);
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+		}
+		.m_name{
+			font-weight: bold;
+		}
+		.m_tipmsg{
+			color: #ACACAC;
+			margin: rem(18) 0;
+		}
+		.m_form{
+			.m_formitem{
+				padding: rem(40) rem(12) rem(10);
+				border-bottom: rem(4) solid #F2F2F2;
+			}
+			.m_color{
+				color: #F29B4D;
+			}
+		}
+	}
+}

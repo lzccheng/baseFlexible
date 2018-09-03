@@ -1,0 +1,67 @@
+.f_box{
+	.f_tabs{
+		border-bottom: rem(4) solid #ddd;
+		.f_tabitem{
+			width: 50%;
+			margin: rem(25) 0;
+			div{
+				img{
+					width: rem(70);
+					height: rem(70);
+				}
+			}
+			.color1{
+				color: #b6b6b6;
+			}
+			.active{
+				color: #ee7a0e;
+			}
+			&.f_borderR{
+				border-right: rem(1) solid #ddd;
+			}
+		}
+	}
+	.f_line{
+		width: 100%;
+		height: rem(35);
+		background-color: #EDEDEB;
+	}
+	.f_show{
+		padding: rem(30);
+		position: relative;
+		.f_angular{	
+			position: absolute;
+			left: 25%;
+			top: rem(-50);
+			margin-left: rem(-15);
+			width: 0;
+			height: 0;
+			border-bottom: rem(30) solid #fff;
+			border-right: rem(22) solid transparent;
+			border-top: rem(30) solid transparent;
+			border-left: rem(22) solid transparent;
+		}
+		.f_showitem{
+			.f_item{
+				padding: rem(30) rem(15) rem(35);
+				border-bottom: rem(2) solid #eee;
+				.f_img{
+					margin-right: rem(20);
+					img{
+						width: rem(75);
+						height: ren(75);
+						border-radius: 100%;
+					}
+				}
+				.f_name{
+					color: #3C3C3C;
+					font-weight: 600;
+					line-height: rem(45);
+				}
+				.f_timecolor{
+					color: #B2B2B2;
+				}
+			}
+		}
+	}
+}

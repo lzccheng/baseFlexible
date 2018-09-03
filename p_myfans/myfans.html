@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我的扫码量</title>
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+	<div class="w750 f_box">
+		<div class="f_tabs flexBox text-center">
+			<div class="f_tabitem f_borderR">
+				<div>
+					<img src="../img/myfans/one2.png" alt="" class="f_img0"><br/>
+				</div>
+				<span class="color1 font28 active">本月扫码量</span>
+			</div>
+			<div class="f_tabitem">
+				<div>
+					<img src="../img/myfans/two.png" alt="" class="f_img0"><br/>
+				</div>
+				<span class="color1 font28">累计扫码量</span>
+			</div>
+		</div>
+		<div class="f_line"></div>
+		<div class="f_show">
+			<div class="f_angular"></div>
+			<div class="f_showselect">
+				<div class="f_showitem">
+					<div class="f_item flexBox">
+						<div class="f_img">
+							<img src="http://g.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277f784629f52a381f30e824fca3.jpg" alt="">
+						</div>
+						<div>
+							<div class="f_name font32">jack</div>
+							<div class="font22 f_timecolor">关注时间：2018-07-19 11:11</div>
+						</div>
+					</div>
+					<div class="f_item flexBox">
+						<div class="f_img">
+							<img src="http://g.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277f784629f52a381f30e824fca3.jpg" alt="">
+						</div>
+						<div>
+							<div class="f_name font32">anmy</div>
+							<div class="font22 f_timecolor">关注时间：2018-07-19 11:11</div>
+						</div>
+					</div>
+				</div>
+				<div class="f_showitem hide">
+					<div class="f_item flexBox">
+						<div class="f_img">
+							<img src="http://img1.imgtn.bdimg.com/it/u=2226083558,2538351483&fm=26&gp=0.jpg" alt="">
+						</div>
+						<div>
+							<div class="f_name font32">mack</div>
+							<div class="font22 f_timecolor">关注时间：2018-07-19 11:11</div>
+						</div>
+					</div>
+					<div class="f_item flexBox">
+						<div class="f_img">
+							<img src="http://img1.imgtn.bdimg.com/it/u=2226083558,2538351483&fm=26&gp=0.jpg" alt="">
+						</div>
+						<div>
+							<div class="f_name font32">Janet</div>
+							<div class="font22 f_timecolor">关注时间：2018-07-19 11:11</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="../js/flexible.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+
+    <script>
+    	$(function(){
+    		function tabClick(){
+    			$('.f_tabitem').click(function(){
+    				var that = $(this);
+    				var index = that.index();
+    				that.find('span').addClass('active');
+    				that.siblings().find('span').removeClass('active');
+    				if(index){
+    					that.find('img').attr('src','../img/myfans/two2.jpg');
+    					that.siblings().find('img').attr('src','../img/myfans/one.png');
+    					$('.f_angular').css('left','75%');
+    				}else{
+    					that.find('img').attr('src','../img/myfans/one2.png');
+    					that.siblings().find('img').attr('src','../img/myfans/two.png');
+    					$('.f_angular').css('left','25%');
+    				}
+    				$('.f_showselect').children().eq(index).show().siblings().hide();
+    			})
+	    	}
+	    	tabClick();
+    	})
+    </script>
+</body>
+</html>

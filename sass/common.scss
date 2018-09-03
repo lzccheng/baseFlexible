@@ -141,7 +141,9 @@ a {
     -webkit-box-orient: vertical;
 }
 
-.hide,
+.hide{
+    display: none;
+}
 .cm_hide,
 .hidden {
     display: none !important;
@@ -178,291 +180,291 @@ a {
 $scale:1;
 ////////////////////////////////////////////
 .font02 {
-    font-size: pxToRem(2* $scale);
+    font-size: rem(2* $scale);
 }
 
 .font03 {
-    font-size: pxToRem(3* $scale);
+    font-size: rem(3* $scale);
 }
 
 .font04 {
-    font-size: pxToRem(4* $scale);
+    font-size: rem(4* $scale);
 }
 
 .font05 {
-    font-size: pxToRem(5* $scale);
+    font-size: rem(5* $scale);
 }
 
 .font06 {
-    font-size: pxToRem(6* $scale);
+    font-size: rem(6* $scale);
 }
 
 .font07 {
-    font-size: pxToRem(7 * $scale);
+    font-size: rem(7 * $scale);
 }
 
 .font08 {
-    font-size: pxToRem(8 * $scale);
+    font-size: rem(8 * $scale);
 }
 
 .font09 {
-    font-size: pxToRem(9 * $scale);
+    font-size: rem(9 * $scale);
 }
 
 .font10 {
-    font-size: pxToRem(10 * $scale);
+    font-size: rem(10 * $scale);
 }
 
 .font11 {
-    font-size: pxToRem(11 * $scale);
+    font-size: rem(11 * $scale);
 }
 
 .font12 {
-    font-size: pxToRem(12 * $scale);
+    font-size: rem(12 * $scale);
 }
 
 .font13 {
-    font-size: pxToRem(13 * $scale);
+    font-size: rem(13 * $scale);
 }
 
 .font14 {
-    font-size: pxToRem(14 * $scale);
+    font-size: rem(14 * $scale);
 }
 
 .font15 {
-    font-size: pxToRem(15 * $scale);
+    font-size: rem(15 * $scale);
 }
 
 .font16 {
-    font-size: pxToRem(16 * $scale);
+    font-size: rem(16 * $scale);
 }
 
 .font17 {
-    font-size: pxToRem(17 * $scale);
+    font-size: rem(17 * $scale);
 }
 
 .font18 {
-    font-size: pxToRem(18 * $scale);
+    font-size: rem(18 * $scale);
 }
 
 .font19 {
-    font-size: pxToRem(19 * $scale);
+    font-size: rem(19 * $scale);
 }
 
 .font20 {
-    font-size: pxToRem(20 * $scale);
+    font-size: rem(20 * $scale);
 }
 
 .font21 {
-    font-size: pxToRem(21 * $scale);
+    font-size: rem(21 * $scale);
 }
 
 .font22 {
-    font-size: pxToRem(22 * $scale);
+    font-size: rem(22 * $scale);
 }
 
 .font23 {
-    font-size: pxToRem(23 * $scale);
+    font-size: rem(23 * $scale);
 }
 
 .font24 {
-    font-size: pxToRem(24 * $scale);
+    font-size: rem(24 * $scale);
 }
 
 .font25 {
-    font-size: pxToRem(25 * $scale);
+    font-size: rem(25 * $scale);
 }
 
 .font26 {
-    font-size: pxToRem(26 * $scale);
+    font-size: rem(26 * $scale);
 }
 
 .font27 {
-    font-size: pxToRem(27 * $scale);
+    font-size: rem(27 * $scale);
 }
 
 .font28 {
-    font-size: pxToRem(28 * $scale);
+    font-size: rem(28 * $scale);
 }
 
 .font29 {
-    font-size: pxToRem(29 * $scale);
+    font-size: rem(29 * $scale);
 }
 
 .font30 {
-    font-size: pxToRem(30 * $scale);
+    font-size: rem(30 * $scale);
 }
 
 .font31 {
-    font-size: pxToRem(31 * $scale);
+    font-size: rem(31 * $scale);
 }
 
 .font32 {
-    font-size: pxToRem(32 * $scale);
+    font-size: rem(32 * $scale);
 }
 
 .font33 {
-    font-size: pxToRem(33 * $scale);
+    font-size: rem(33 * $scale);
 }
 
 .font34 {
-    font-size: pxToRem(34 * $scale);
+    font-size: rem(34 * $scale);
 }
 
 .font35 {
-    font-size: pxToRem(35 * $scale);
+    font-size: rem(35 * $scale);
 }
 
 .font36 {
-    font-size: pxToRem(36 * $scale);
+    font-size: rem(36 * $scale);
 }
 
 .font37 {
-    font-size: pxToRem(37 * $scale);
+    font-size: rem(37 * $scale);
 }
 
 .font38 {
-    font-size: pxToRem(38 * $scale);
+    font-size: rem(38 * $scale);
 }
 
 .font39 {
-    font-size: pxToRem(39 * $scale);
+    font-size: rem(39 * $scale);
 }
 
 .font40 {
-    font-size: pxToRem(40 * $scale);
+    font-size: rem(40 * $scale);
 }
 
 .font41 {
-    font-size: pxToRem(41 * $scale);
+    font-size: rem(41 * $scale);
 }
 
 .font42 {
-    font-size: pxToRem(42 * $scale);
+    font-size: rem(42 * $scale);
 }
 
 .font43 {
-    font-size: pxToRem(43 * $scale);
+    font-size: rem(43 * $scale);
 }
 
 .font44 {
-    font-size: pxToRem(44 * $scale);
+    font-size: rem(44 * $scale);
 }
 
 .font45 {
-    font-size: pxToRem(45 * $scale);
+    font-size: rem(45 * $scale);
 }
 
 .font46 {
-    font-size: pxToRem(46 * $scale);
+    font-size: rem(46 * $scale);
 }
 
 .font47 {
-    font-size: pxToRem(47 * $scale);
+    font-size: rem(47 * $scale);
 }
 
 .font48 {
-    font-size: pxToRem(48 * $scale);
+    font-size: rem(48 * $scale);
 }
 
 .font49 {
-    font-size: pxToRem(49 * $scale);
+    font-size: rem(49 * $scale);
 }
 
 .font50 {
-    font-size: pxToRem(50 * $scale);
+    font-size: rem(50 * $scale);
 }
 
 .font52 {
-    font-size: pxToRem(52 * $scale);
+    font-size: rem(52 * $scale);
 }
 
 .font54 {
-    font-size: pxToRem(54 * $scale);
+    font-size: rem(54 * $scale);
 }
 
 .font56 {
-    font-size: pxToRem(56 * $scale);
+    font-size: rem(56 * $scale);
 }
 
 .font58 {
-    font-size: pxToRem(58 * $scale);
+    font-size: rem(58 * $scale);
 }
 
 .font60 {
-    font-size: pxToRem(60 * $scale);
+    font-size: rem(60 * $scale);
 }
 
 .font62 {
-    font-size: pxToRem(62 * $scale);
+    font-size: rem(62 * $scale);
 }
 
 .font64 {
-    font-size: pxToRem(64 * $scale);
+    font-size: rem(64 * $scale);
 }
 
 .font66 {
-    font-size: pxToRem(66 * $scale);
+    font-size: rem(66 * $scale);
 }
 
 .font68 {
-    font-size: pxToRem(68 * $scale);
+    font-size: rem(68 * $scale);
 }
 
 .font70 {
-    font-size: pxToRem(70 * $scale);
+    font-size: rem(70 * $scale);
 }
 
 .font72 {
-    font-size: pxToRem(72 * $scale);
+    font-size: rem(72 * $scale);
 }
 
 .font74 {
-    font-size: pxToRem(74 * $scale);
+    font-size: rem(74 * $scale);
 }
 
 .font75 {
-    font-size: pxToRem(75 * $scale);
+    font-size: rem(75 * $scale);
 }
 
 .font76 {
-    font-size: pxToRem(76 * $scale);
+    font-size: rem(76 * $scale);
 }
 
 .font78 {
-    font-size: pxToRem(78 * $scale);
+    font-size: rem(78 * $scale);
 }
 
 .font80 {
-    font-size: pxToRem(80);
+    font-size: rem(80);
 }
 
 .font82 {
-    font-size: pxToRem(82 * $scale);
+    font-size: rem(82 * $scale);
 }
 
 .font84 {
-    font-size: pxToRem(84 * $scale);
+    font-size: rem(84 * $scale);
 }
 
 .font86 {
-    font-size: pxToRem(86 * $scale);
+    font-size: rem(86 * $scale);
 }
 
 .font87 {
-    font-size: pxToRem(87 * $scale);
+    font-size: rem(87 * $scale);
 }
 
 .font88 {
-    font-size: pxToRem(88 * $scale);
+    font-size: rem(88 * $scale);
 }
 
 .font89 {
-    font-size: pxToRem(89 * $scale);
+    font-size: rem(89 * $scale);
 }
 
 .font90 {
-    font-size: pxToRem(90 * $scale);
+    font-size: rem(90 * $scale);
 }
 
 .pageSlider {
